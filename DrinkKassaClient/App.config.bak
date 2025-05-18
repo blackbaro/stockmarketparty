@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+	<system.serviceModel>
+		<client>
+			<endpoint name="DrinkService" address="net.tcp://localhost:8732/DrinkService/" binding="netTcpBinding" contract="DrinkServiceContract.IService1"/>
+		</client>
+	</system.serviceModel>
+</configuration>

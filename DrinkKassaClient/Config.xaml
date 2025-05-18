@@ -1,0 +1,47 @@
+﻿<Window x:Class="DrinkKassaClient.Config"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Config" WindowStartupLocation="CenterOwner" Height="265" Width="422">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto"  />
+            <RowDefinition Height="auto"  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="270" />
+            <ColumnDefinition Width="*"  />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Gevoeligheid:" FontWeight="Bold" Grid.Column="0" Grid.Row="0" />
+        <TextBox FontWeight="Bold" Name="txtSensibility" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="0"/>
+
+        <Label Content="Aantal seconden tussen de calculaties:" FontWeight="Bold" Grid.Column="0" Grid.Row="1" />
+        <TextBox FontWeight="Bold" Name="txtSeconds" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1"/>
+
+        <Label Content="Aantal seconden tot de volgende beurscrash :" FontWeight="Bold" Grid.Column="0" Grid.Row="2" />
+        <TextBox FontWeight="Bold" Name="txtSecondsTillNextCrash" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2"/>
+
+        <Label Content="Aantal seconden dat een beurscrash duurt:" FontWeight="Bold" Grid.Column="0" Grid.Row="3" />
+        <TextBox FontWeight="Bold" Name="txtCrashSeconds" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="3"/>
+        
+        <Label Content="Prijs interval:" FontWeight="Bold" Grid.Column="0" Grid.Row="4" />
+        <TextBox FontWeight="Bold" Name="txtPriceInterval" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4"/>
+        
+        <Label Content="Fontgrootte projector:" FontWeight="Bold" Grid.Column="0" Grid.Row="5" />
+        <TextBox FontWeight="Bold" Name="txtFontSize" Width="50" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="5"/>
+
+        <Label Content="Draaiend logo:" FontWeight="Bold" Grid.Column="0" Grid.Row="6" />
+        <CheckBox FontWeight="Bold" Margin="0,8,0,0" Name="chkTurn"  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="6"/>
+
+        <Button Content="Opslaan" Width="60"  HorizontalAlignment="Left" Click="Button_Save" Margin="0,5,0,0" Grid.Row="7" Grid.Column="1" />
+        <Button Content="Annuleren" Width="60" HorizontalAlignment="Left" Click="Button_Annuleren"  Margin="70,5,0,0" Grid.Row="7" Grid.Column="1" />
+
+
+    </Grid>
+</Window>

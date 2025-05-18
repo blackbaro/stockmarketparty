@@ -1,0 +1,45 @@
+﻿<Window x:Class="DrinkKassaClient.EditDrink"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="EditDrink" Height="225" Width="240" WindowStartupLocation="CenterOwner"  WindowStyle="ToolWindow">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            
+         
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="HotKey:" FontWeight="Bold" Grid.Column="0" Grid.Row="0" />
+        <Label Content="F1" FontWeight="Bold" Name="lblHotkey" Grid.Column="1" Grid.Row="0"/>
+
+        <Label Content="Naam:" Grid.Column="0" Grid.Row="1" />
+        <TextBox Name="txtDrinkName" Width="90" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" />
+
+        <Label Content="Normal price:" Grid.Column="0" Grid.Row="2" />
+        <TextBox Name="txtNormalPrice" Grid.Column="1" Grid.Row="2" Width="40" HorizontalAlignment="Left" />
+
+        <Label Content="Min price:" Grid.Column="0" Grid.Row="3" />
+        <TextBox Name="txtMinPrice" Grid.Column="1" Grid.Row="3" Width="40" HorizontalAlignment="Left" />
+
+        <Label Content="Max price:" Grid.Column="0" Grid.Row="4" />
+        <TextBox Name="txtMaxPrice" Grid.Column="1" Grid.Row="4" Width="40" HorizontalAlignment="Left" />
+
+        <Label Content="Gewicht:" Visibility="Hidden" Grid.Column="0" Grid.Row="5" />
+        <TextBox Name="txtWeight" Visibility="Hidden" Text="1" Grid.Column="1" Grid.Row="5" Width="40" HorizontalAlignment="Left" />
+        
+        <Button Content="Opslaan" Width="60"  HorizontalAlignment="Left" Click="Button_Save" Margin="10,5,0,0" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Button Content="Annuleren" Width="60" HorizontalAlignment="Left" Click="Button_Annuleren"  Margin="80,5,0,0" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Button Content="Wissen" Width="60" HorizontalAlignment="Left" Click="Button_Delete"  Margin="150,5,0,0" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

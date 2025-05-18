@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DrinkKassaClient.Window1">
+    <Position X="5.75" Y="1.5" Width="2.75" />
+    <NestedTypes>
+      <Delegate Name="DrinkKassaClient.Window1.MyMethodInvoker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Window1.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAACAIAAAAAAAAsgEAABAAAAAAAhAAIAgAIAAIQAAAA=</HashCode>
+      <FileName>Window1.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

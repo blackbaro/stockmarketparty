@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="DrinkKassaClient.DrinkOrderControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Label Name="lblDrinkName" FontSize="18" Content="Duvel" Grid.Column="0" />
+        <Label Name="lblPrice" Grid.Column="1" FontSize="18" Content="5€" />
+        <Button Name="btnRemove" Content="X" Height="20"    Grid.Column="2" Click="Button_Click" />
+    </Grid>
+</UserControl>

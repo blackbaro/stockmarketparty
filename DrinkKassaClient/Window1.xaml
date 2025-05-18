@@ -1,0 +1,66 @@
+﻿<Window x:Class="DrinkKassaClient.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Beursfuif kassa" Background="White" Height="768" Width="1024" KeyDown="Window_KeyDown">
+
+    <Grid>
+        <Grid.ColumnDefinitions>            
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="250" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <DockPanel 
+        Name="DockPanel_Menu"
+        Grid.Column="0"
+        Grid.ColumnSpan="2"
+        Grid.Row="0">
+            <Menu Background="LightBlue"   >
+                <MenuItem Header="File">                   
+                    <MenuItem Header="Config" Click="Config_Click" />
+                    <MenuItem Header="Reset prijzen" Click="ResetPrices_Click" />
+                    <MenuItem Header="Beurs Crash" Click="SetBeursCrash_Click" />
+                    <MenuItem Header="Overzicht verkochte dranken (stuurt gegevens naar beursparty.net)" Click="SellingsOverview_Click" />
+                    
+                    <MenuItem Header="Exit" InputGestureText="Alt-F4"
+                              Click="ExitApplication">
+
+                        <MenuItem.ToolTip>
+                            <ToolTip>
+                                Click here to exit
+                            </ToolTip>
+                        </MenuItem.ToolTip>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top"  Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" Name="StackPanel" />
+        <Label Grid.Column="1" Grid.Row="1" FontSize="20" Background="LightGray"  HorizontalContentAlignment="Center" VerticalAlignment="Top" >Prijs</Label>
+        <Label Grid.Column="1" Grid.Row="1" FontSize="70" Name="lblTotal"  Margin="0,10,0,0" HorizontalAlignment="Center">0€</Label>
+        
+        <Label Grid.Column="1" Grid.Row="2" FontSize="20" Name="lblBonnetjes" Background="LightGray"  HorizontalContentAlignment="Center" VerticalAlignment="Top" >Aantal keer x cent</Label>
+        <Label Grid.Column="1" Grid.Row="2" FontSize="70" Name="lblNumberOfIntervals" Margin="0,10,0,0"  HorizontalAlignment="Center">0</Label>
+
+        <ListBox Grid.RowSpan="2" Grid.Column="1" Grid.Row="3" Name="lstOrders" />
+        <Label Grid.Column="0" Grid.Row="4" FontSize="15" Name="lblInfo">
+            <TextBlock>                
+                1)Dubbelklik met je muis op de F1 tot F12 knoppen om een drank te configureren 
+                <LineBreak/>
+                2)Gebruik de functietoetsen F1 tot F12 om dranken te bestellen.
+                <LineBreak/>
+                3)Druk op enter om de bestelling door te voeren
+            </TextBlock>
+        
+
+        </Label>
+        <Label Grid.Column="0" Grid.Row="5" FontSize="15" Name="lblStatus" Content="Status" />
+    </Grid>
+</Window>

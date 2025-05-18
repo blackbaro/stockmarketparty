@@ -1,0 +1,16 @@
+﻿<Window x:Class="DrinkServiceMain.Disclaimer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Disclaimer" Height="300" Width="467.347">
+    <Grid>
+
+        <TextBlock HorizontalAlignment="Left" Margin="24.571,37.817,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409.47">
+            Ondanks de applicatie goed getest en stabiel is kan het voorvallen dat sommige pc's vanwege hun instellingen of hardware toch problemen geven. Het is de verantwoordelijkheid van de gebruiker om dit op voorhand goed uit te testen. Beursparty.net is niet verantwoordelijk voor problemen veroorzaakt door de software. Het gebruik van de applicatie is gratis en volledig op eigen risico.
+        </TextBlock>
+
+        <Button Click="BtnApprove_Click"  Name="BtnApprove" Content="Ik ga akkoord" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20" Width="157.653" Height="35.225"/>
+        <Button Content="Ik ga niet akkoord" Name="BtnDisApprove" Click="BtnDisApprove_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20" Width="144.388" Height="35.225"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24.571,16.857,0,0" TextWrapping="Wrap" Text="Voorwaarden" VerticalAlignment="Top" FontWeight="Bold" TextDecorations="Underline"/>
+
+    </Grid>
+</Window>

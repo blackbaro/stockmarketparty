@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="DrinkStatsClient2.ReflexLogo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <Grid>
+        <Canvas >
+            <Ellipse Width="300" Height="300" Stroke="Black" Canvas.Top="0" StrokeThickness="25"/>            
+            <Label Content="Reflex" FontSize="45" FontFamily="Arial Black" Foreground="Black" Canvas.Left="40" Canvas.Top="110" />
+            <Rectangle Fill="Black" Width="7" Canvas.Left="110" Canvas.Bottom="5" Height="80"/>
+            <Ellipse Width="30" Height="30" Stroke="Black" Name="Ellipse1" Canvas.Bottom="82" Canvas.Left="99" StrokeThickness="5"/>
+            <Rectangle Fill="Black" Width="7" Canvas.Left="170" Canvas.Bottom="5" Height="80"/>
+            <Ellipse Width="30" Height="30" Stroke="Black" Name="Ellipse2" Canvas.Bottom="82" Canvas.Left="159" StrokeThickness="5"/>
+            <Rectangle Fill="Black" Width="7" Canvas.Left="230" Canvas.Bottom="40" Height="105"/>
+            <Ellipse Width="30" Height="30" Stroke="Black" Name="Ellipse3" Canvas.Bottom="142" Canvas.Left="219" StrokeThickness="5"/>
+            
+        </Canvas>
+    </Grid>
+</UserControl>
